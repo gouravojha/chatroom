@@ -302,6 +302,7 @@ async function joinRoom(roomId) {
             // Show chat room
             noRoomSelected.style.display = 'none';
             chatRoom.style.display = 'flex';
+            chatRoom.style.flexDirection = 'column';
             
             // Join via WebSocket
             if (ws && ws.readyState === WebSocket.OPEN) {
